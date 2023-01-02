@@ -1,0 +1,67 @@
+.menu{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.menu {
+    overflow: auto;
+}
+.menuitem > .title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: large;
+    font-weight: bold;
+    color: #555;
+    margin-left: 8px;
+}
+
+.menuitem > .links {
+    margin-top: 1em;
+    margin-left: 16px;
+    font-size: large;
+    padding: 4px;
+}
+
+.menuitem:last-child{
+    margin-bottom: 2em;
+}
+
+.links:hover{
+    cursor: pointer;
+    background: linear-gradient(#FBDF07, rgb(255, 127, 63));
+    opacity: 0.7;
+    box-shadow: 0px 8px 14px rgb(0, 0, 0);
+    animation: smoke ease-in-out .75s;
+}
+
+@keyframes smoke {
+    45%,
+    55% {
+        filter: blur(var(--blur));
+    }
+    50%,
+    50.1% {
+        opacity: 0;
+    }
+    25%,
+    75% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(var(--move)) translateY(var(--move-y));
+    }
+    50.1% {
+        transform: translateX(calc(var(--move) * -1));
+    }
+}
+
+:root {
+    --move: 12px;
+    --move-y: -8px;
+    --blur: 4px;
+    --skew: 25deg;
+    --skew-bounce: -12px;
+}
