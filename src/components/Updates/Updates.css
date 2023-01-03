@@ -1,0 +1,41 @@
+.Updates{
+    width: 90%;
+    background-color: #E4FBFF;
+    gap: 1rem;
+    padding: 0.6rem;
+    display: flex;
+    flex-direction:column;
+    font-size: 12px;
+    border-radius: 0.7rem;
+    margin-left: 2%;
+    background: rgba( 228, 251, 255, 0.8 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0.5px );
+    -webkit-backdrop-filter: blur( 0.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+
+.user > figure > img {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+}
+
+.user{
+    display: grid;
+    grid-template-columns: 6rem auto;
+    place-items: center;
+}
+
+.detail {
+    margin-bottom: 0.5rem;
+    text-align:justify;
+}
+
+.figCap {
+    text-align: center;
+    color : #7868E6;
+    font-weight: bold;
+}
