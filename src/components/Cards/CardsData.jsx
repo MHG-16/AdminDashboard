@@ -46,6 +46,11 @@ export const  CardsData =[
         barValue: 60,
         value: '4,270',
         png: GiPayMoney,
-        series: [10, 25, 15, 30, 12, 15, 20]
+        series: [
+            {
+                name: 'Expenses',
+                data: [10, 25, 15, 30, 12, 15, 20]
+            }
+        ]
     }
 ]
