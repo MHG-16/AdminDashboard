@@ -1,6 +1,5 @@
 import { BiEuro } from 'react-icons/bi';
 import { GiMoneyStack, GiPayMoney } from 'react-icons/gi';
-import { CircularProgressbar } from 'react-circular-progressbar';
 
 import 'react-circular-progressbar/dist/styles.css';
 

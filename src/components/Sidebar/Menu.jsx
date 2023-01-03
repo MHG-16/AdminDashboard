@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import { items } from './SideBarItems';
 import './menu.css';
